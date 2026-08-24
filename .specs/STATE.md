@@ -32,10 +32,10 @@
 ## Handoff
 
 - **Feature**: construção da skill opossum-fjord-spec-driven (Fase B)
-- **Phase / Task**: Fase A concluída (repos criados + registrados no Orca + handoff versionado). Próximo: Fase B, Etapa 1 (esqueleto da skill).
-- **Completed**: Fase A completa — repos `opossum-fjord-spec-driven` (público) e `jolly-rhinoceros` (privado) criados, clonados em `C:\Users\anaal\orca\`, registrados no Orca (ids no docs/PLANO.md), `docs/PLANO.md` + `.specs/STATE.md` escritos (ainda não commitados).
-- **In-progress** (file:line): `docs/PLANO.md` (escrito, aguardando commit+push)
-- **Next step**: continuar a Fase B dentro do Orca — Etapa 1 (esqueleto): criar `skills/opossum-fjord-spec-driven/SKILL.md`, `README.md`, `LICENSE`, `.gitignore`; commit + push. Ver `docs/PLANO.md`.
+- **Phase / Task**: Fase B, Etapas 1–4 concluídas (esqueleto + 12 references herdados + 3 novos + 5 scripts). Próximo: commit+push das Etapas 1–4, depois Etapa 5 (E2E no sandbox `jolly-rhinoceros`) e Etapa 6 (instalação + finalização).
+- **Completed**: Fase A completa. Fase B — Etapa 1 (SKILL.md, README.md, LICENSE CC-BY-4.0, .gitignore), Etapa 2 (12 references herdados; adaptados implement/validate/memory/tasks), Etapa 3 (3 novos: frontend-first, checkpoints, repo-docs), Etapa 4 (5 scripts copiados; validate_state.py com audit soft de mirrors) — todos escritos, aguardando commit+push.
+- **In-progress** (file:line): `skills/opossum-fjord-spec-driven/` (conteúdo das Etapas 1–4 escrito, aguardando commit)
+- **Next step**: commitar as Etapas 1–4 e, com autorização, fazer push; em seguida Etapa 5 (E2E no sandbox `jolly-rhinoceros`) e Etapa 6 (`npx skills add`, atualizar `docs/PLANO.md` + README, commit+push). Ver `docs/PLANO.md`.
 - **Blockers**: nenhum
-- **Uncommitted files**: `docs/PLANO.md`, `.specs/STATE.md`
+- **Uncommitted files**: `skills/opossum-fjord-spec-driven/**` (todo o conteúdo das Etapas 1–4)
 - **Branch**: main
