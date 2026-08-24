@@ -32,10 +32,10 @@
 ## Handoff
 
 - **Feature**: construção da skill opossum-fjord-spec-driven (Fase B)
-- **Phase / Task**: Fase B, Etapas 1–4 concluídas (esqueleto + 12 references herdados + 3 novos + 5 scripts). Próximo: commit+push das Etapas 1–4, depois Etapa 5 (E2E no sandbox `jolly-rhinoceros`) e Etapa 6 (instalação + finalização).
-- **Completed**: Fase A completa. Fase B — Etapa 1 (SKILL.md, README.md, LICENSE CC-BY-4.0, .gitignore), Etapa 2 (12 references herdados; adaptados implement/validate/memory/tasks), Etapa 3 (3 novos: frontend-first, checkpoints, repo-docs), Etapa 4 (5 scripts copiados; validate_state.py com audit soft de mirrors) — todos escritos, aguardando commit+push.
-- **In-progress** (file:line): `skills/opossum-fjord-spec-driven/` (conteúdo das Etapas 1–4 escrito, aguardando commit)
-- **Next step**: commitar as Etapas 1–4 e, com autorização, fazer push; em seguida Etapa 5 (E2E no sandbox `jolly-rhinoceros`) e Etapa 6 (`npx skills add`, atualizar `docs/PLANO.md` + README, commit+push). Ver `docs/PLANO.md`.
+- **Phase / Task**: **Fase B CONCLUÍDA** — Etapas 1–6 executadas, commit + push feitos (repo público) e E2E documentada no sandbox `jolly-rhinoceros`.
+- **Completed**: Fase A completa. Fase B — Etapa 1 (esqueleto), Etapa 2 (12 references herdados), Etapa 3 (3 novos), Etapa 4 (5 scripts + audit de mirrors), Etapa 5 (E2E no sandbox com feature `todo`), Etapa 6 (`npx skills add` → `~\.agents\skills\` + `.skill-lock.json`; PLANO/README atualizados).
+- **In-progress** (file:line): nenhum — Fase B fechada.
+- **Next step**: usar a skill em projetos consumidores. Nota conhecida: PromptScript não suporta instalação global (esperado).
 - **Blockers**: nenhum
-- **Uncommitted files**: `skills/opossum-fjord-spec-driven/**` (todo o conteúdo das Etapas 1–4)
+- **Uncommitted files**: `docs/PLANO.md` (status das etapas atualizado, aguardando commit+push)
 - **Branch**: main

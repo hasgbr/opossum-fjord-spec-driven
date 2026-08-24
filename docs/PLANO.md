@@ -81,12 +81,14 @@ origem público: `tech-leads-club/agent-skills` → `packages/skills-catalog/ski
 
 ## Fase B — Etapas de execução (dentro do Orca)
 
-### Etapa 1 — Esqueleto
+> **Status: Fase B CONCLUÍDA (2026-08-24)** — todas as etapas executadas, commits + push feitos.
+
+### Etapa 1 — Esqueleto ✅
 Criar `skills/opossum-fjord-spec-driven/SKILL.md` (frontmatter + regras mescladas), `README.md`
 (instalação via `npx skills add <repo> --skill opossum-fjord-spec-driven`), `LICENSE` (CC-BY-4.0,
 attribution `felipfr`), `.gitignore`. Commit + push.
 
-### Etapa 2 — References herdados (12)
+### Etapa 2 — References herdados (12) ✅
 Copiar de `C:\Users\anaal\.cache\agent-skills\skills\tlc-spec-driven\references\` e adaptar:
 - `implement.md` — integrar checkpoints (referencia `checkpoints.md`) e espelhos (`repo-docs.md`).
 - `validate.md` — adicionar UAT no navegador quando frontend-first.
@@ -96,7 +98,7 @@ Copiar de `C:\Users\anaal\.cache\agent-skills\skills\tlc-spec-driven\references\
 
 Commit + push.
 
-### Etapa 3 — References novos (3)
+### Etapa 3 — References novos (3) ✅
 - `frontend-first.md` — ciclo FE mock → validar navegador → BE real + adapter → testes+espelhos.
   Stack-agnostic (ex.: interface + 2 implementações, `mock`/`http`, chaveada por env).
 - `checkpoints.md` — cadência ~2 sub-etapas, decidida no início do projeto, registrada em STATE.md.
@@ -104,24 +106,31 @@ Commit + push.
 
 Commit + push.
 
-### Etapa 4 — Scripts (5)
+### Etapa 4 — Scripts (5) ✅
 Copiar de `C:\Users\anaal\.cache\agent-skills\skills\tlc-spec-driven\scripts\`. Adaptar
 `validate_state.py` se necessário para cobrir os novos artefatos. Testar cada script localmente
 (`python3 <script> --help` ou validações de exemplo). Commit + push.
+- Adaptado: `validate_state.py` ganhou audit **soft** (WARNING não-bloqueante) dos mirrors
+  (CHANGELOG/TEST-RESULTS/CHECKLIST-MANUAL) quando a feature passa — mantém a semântica do gate.
 
-### Etapa 5 — Validação E2E no sandbox (`jolly-rhinoceros`)
+### Etapa 5 — Validação E2E no sandbox (`jolly-rhinoceros`) ✅
 Rodar a skill numa feature pequena: Specify → checkpoint → Execute → Verifier → espelhos atualizados.
 Confirmar scripts determinísticos e lessons layer. Documentar resultado em `.specs/` do sandbox.
+- Feature `todo` exercitada: `validate_spec.py` 0/0, `validate_tasks.py` 0/0, `validate_state.py`
+  PASS + mirrors presentes (0 WARNING), `lessons.py` init/add/status/list OK (L-001 candidata).
+- Resultado commitado e pushado em `hasgbr/jolly-rhinoceros` (`.specs/`).
 
-### Etapa 6 — Instalação + finalização
+### Etapa 6 — Instalação + finalização ✅
 - `npx skills add <repo> --skill opossum-fjord-spec-driven` (popula `~/.agents/skills/` + `.skill-lock.json`).
 - Atualizar `docs/PLANO.md` (status das etapas) e README final. Commit + push.
+- Instalado em `~\.agents\skills\opossum-fjord-spec-driven` (universal + symlink Claude Code).
+  Nota: PromptScript não suporta instalação global — esperado, não é falha da skill.
 
-## Ordem de checkpoints (Fase B)
+## Ordem de checkpoints (Fase B) — todos concluídos
 
-- CP2 — Etapa 1–2 (esqueleto + herdados)
-- CP3 — Etapa 3–4 (novos + scripts)
-- CP4 — Etapa 5–6 (E2E + instalação)
+- CP2 — Etapa 1–2 (esqueleto + herdados) ✅
+- CP3 — Etapa 3–4 (novos + scripts) ✅
+- CP4 — Etapa 5–6 (E2E + instalação) ✅
 
 ## Referências úteis
 
